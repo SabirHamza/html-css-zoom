@@ -13,6 +13,7 @@
     height: 10vh;
     text-align: end;
     background-color: black;
+    padding-top: 10px;
 }
 
 .container.head > span{
@@ -68,6 +69,7 @@ img{
 
 .btn.dflex i{
     font-size: 2rem;
+    padding: 5px 0;
 }
 
 #quit{
