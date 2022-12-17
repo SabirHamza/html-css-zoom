@@ -2,47 +2,76 @@
     padding: 0;
     margin: 0;
     box-sizing: border-box;
+    color: white;
 }
 
 .dflex{
     display: flex;
 }
 
-header{
+.container.head{
     height: 10vh;
+    text-align: end;
+    background-color: black;
+}
+
+.container.head > span{
+    background-color: lightgray;
+    padding: 5px;
+    border-radius: 5px;
 }
 
 main{
+    background-color: black;
+}
+
+.container.main{
     height: calc(100vh - 22vh);
     width: 90vw;
     margin: 0 auto;
-}
-
-
-.container.main{
+    padding: 10px;
     justify-content: space-between;
-    height: 100%;
     flex-wrap: wrap;
     row-gap: 10px;
 }
 
 .card{
-    height: calc((100% - 40px ) / 5);
+    height: calc((100% - 40px) / 5);
     width: calc((100% - 30px) / 7);
     background-color: yellow;
+    object-fit: cover;
+    overflow: hidden;
+}
+
+img{
+    object-fit: cover;
 }
 
 .container.nav{
+    background-color: #091627;
     height: 12vh;
     justify-content: space-between;
 }
 
 .btn{
     height: 12vh;
+    border: none;
+    background-color: inherit;
 }
 
 .btn.dflex{
     flex-direction: column;
     align-items: center;
     justify-content: center;
+    margin: 0 5px;
+}
+
+.btn.dflex i{
+    font-size: 2rem;
+}
+
+#quit{
+    background-color: #72787D;
+    color: red;
+    padding: 0 10px;
 }
