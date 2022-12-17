@@ -4,12 +4,12 @@
     box-sizing: border-box;
 }
 
-header{
-    height: 10vh;
+.dflex{
+    display: flex;
 }
 
-nav{
-    height: 12vh;
+header{
+    height: 10vh;
 }
 
 main{
@@ -18,20 +18,31 @@ main{
     margin: 0 auto;
 }
 
-.dflex{
-    display: flex;
-}
 
 .container.main{
+    justify-content: space-between;
     height: 100%;
     flex-wrap: wrap;
-    justify-content: space-between;
     row-gap: 10px;
 }
-
 
 .card{
     height: calc((100% - 40px ) / 5);
     width: calc((100% - 30px) / 7);
     background-color: yellow;
+}
+
+.container.nav{
+    height: 12vh;
+    justify-content: space-between;
+}
+
+.btn{
+    height: 12vh;
+}
+
+.btn.dflex{
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
 }
