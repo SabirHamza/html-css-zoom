@@ -1,0 +1,37 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+header{
+    height: 10vh;
+}
+
+nav{
+    height: 12vh;
+}
+
+main{
+    height: calc(100vh - 22vh);
+    width: 90vw;
+    margin: 0 auto;
+}
+
+.dflex{
+    display: flex;
+}
+
+.container.main{
+    height: 100%;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    row-gap: 10px;
+}
+
+
+.card{
+    height: calc((100% - 40px ) / 5);
+    width: calc((100% - 30px) / 7);
+    background-color: yellow;
+}
